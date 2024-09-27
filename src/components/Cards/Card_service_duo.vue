@@ -2,9 +2,9 @@
     <div class="flex md:px-3 py-3">
         <div class="max-w-sm md:max-w-md rounded overflow-hidden shadow-lg bg-white  ">
             <div class="flex items-center  px-4">
-                <img class="w-5/12 h-52 object-contain" :src="plan.image" alt="Plan Image">
+                <img class="w-5/12 md:h-52 h-40 object-contain" :src="plan.image" alt="Plan Image">
                 <h1 class="mx-4 text-4xl font-medium">+</h1> <!-- Añadido margen para separar el signo "+" de las imágenes -->
-                <img class="w-5/12 h-52 object-contain" :src="plan.image2" alt="Plan Image">
+                <img class="w-5/12 md:h-52 h-40 object-contain" :src="plan.image2" alt="Plan Image">
             </div>
         
             <div class="min-w-96 px-6 py-4   text-center">
