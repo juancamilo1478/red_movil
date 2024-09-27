@@ -1,5 +1,5 @@
 <template>
-    <div class="flex px-3 py-3">
+    <div class="flex md:px-3 py-3">
         <div class="max-w-sm md:max-w-md rounded overflow-hidden shadow-lg bg-white  ">
             <div class="flex items-center  px-4">
                 <img class="w-5/12 h-52 object-contain" :src="plan.image" alt="Plan Image">
