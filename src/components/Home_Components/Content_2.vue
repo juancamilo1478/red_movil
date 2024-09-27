@@ -1,8 +1,8 @@
 <template>
     <section class="w-full py-6">
-        <div class="w-3/4 mx-auto  ">
+        <div class="w-10/12 md:w-3/4 mx-auto  ">
             <div class="inline-block pt-11">
-                <h2 class="text-4xl font-bold whitespace-nowrap" >Cuentas Individuales</h2>
+                <h2 class="text-2xl font-bold whitespace-nowrap md:text-4xl">Cuentas Individuales</h2>
                 <hr class="border-t-4   w-full mt-4" style="border-color: var(--color-app);"  />
                 <h2 class="text-1xl font-semibold whitespace-nowrap pt-2">Las visibles tienen stock</h2>
             </div>

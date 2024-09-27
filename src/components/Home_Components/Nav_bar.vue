@@ -17,10 +17,10 @@
          <!-- Overlay -->
          <div v-if="menuOpen" class="fixed inset-0 bg-black opacity-95 z-40 text-white font-bold flex items-center justify-center " @click="toggleMenu">
             <ul class="flex flex-col items-center "> <!-- Utilizar flex-col para centrar verticalmente -->
-                <li class="mb-4"><a class="md:p-4 py-3 px-0 block text-5xl" href="#">Productos</a></li>
-                <li class="mb-4"><a class="md:p-4 py-3 px-0 block text-5xl" href="#">Video ayudas</a></li>
-                <li class="mb-4"><a class="md:p-4 py-3 px-0 block text-5xl" href="#">Contacto</a></li>
-                <li><a class="md:p-4 py-3 px-0 block text-5xl" href="#">Soy proveedor</a></li>
+                <li class="mb-4"><a class="md:p-4 py-3 px-0 block text-5xl sm:text-3xl"  >Productos</a></li>
+                <li class="mb-4"><a class="md:p-4 py-3 px-0 block text-5xl sm:text-3xl"  >Video ayudas</a></li>
+                <li class="mb-4"><a class="md:p-4 py-3 px-0 block text-5xl sm:text-3xl" >Contacto</a></li>
+                <li><a class="md:p-4 py-3 px-0 block text-5xl sm:text-3xl" href="#">Soy proveedor</a></li>
             </ul>
         </div>
         <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
