@@ -1,0 +1,39 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --color-app: #330099;
+}
+
+/* semantic color variables for this project */
+:root {
+ 
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+ 
+}
