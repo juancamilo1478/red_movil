@@ -1,10 +1,15 @@
 <template>
-    <div class="flex md:px-3 py-3">
-        <div class="max-w-sm rounded overflow-hidden shadow-lg ">
-            <img class="w-full md:h-52 h-40  object-cover" :src="plan.image" alt="Plan Image">
-            <div class="min-w-80  md:min-w-96 px-6 py-4 bg-gray-200 text-center">
-                <div class="font-bold text-xl mb-2">{{ plan.message }}</div>
-                <div class="font-bold text-xl mb-2 pb-7">{{ plan.window }}</div>
+    <div class="flex md:px-2 py-3 w-80 ">
+        <div class="min-w-xs rounded overflow-hidden  shadow-md ">
+            <div class="flex items-center justify-center  ">
+                <img class="w-5/12 object-contain h-36   " :src="plan.image" alt="Plan Image">
+            </div>
+            <div class="    min-w-xs   py-4 bg-gray-100  text-center">
+                <div class="font-bold  sm:text-xl  md:text-1xl  ">{{ plan.message }}</div>
+                <div class="    pb-2 font-bold sm:text-sm  md:text-2xl" style="color: var(--color-app);">${{ plan.price
+                }}/MES</div>
+                <div class="font-semibold sm:text-sm  md:text-1xl mb-2 pb-7 text-gray-600">{{ plan.window }}</div>
+
                 <button class="bg-[var(--color-app)] text-white font-bold py-2 px-6 rounded-full hover:bg-opacity-80">
                     Comprar
                 </button>
@@ -14,7 +19,7 @@
 </template>
 <script>
 export default {
-    name:'Card_services',
+    name: 'Card_services',
     props: {
         plan: {
             type: Object,
