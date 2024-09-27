@@ -1,6 +1,6 @@
 <template>
     <div class="flex md:px-2 py-3 w-80 ">
-        <div class="min-w-xs rounded overflow-hidden  shadow-md ">
+        <div class="min-w-xs rounded overflow-hidden    " style="box-shadow: 0 4px 15px rgba(0, 0, 0, 0.151);">
             <div class="flex items-center justify-center  ">
                 <img class="w-5/12 object-contain h-36   " :src="plan.image" alt="Plan Image">
             </div>

@@ -1,7 +1,7 @@
 <template>
     <div class="flex md:px-3 py-3">
         <div class="max-w-sm md:max-w-md rounded overflow-hidden shadow-lg bg-white  ">
-            <div class="flex items-center  px-4">
+            <div class="flex items-center  px-4 pt-4">
                 <img class="w-5/12 md:h-36 h-30 object-contain" :src="plan.image" alt="Plan Image">
                 <h1 class="mx-4 text-4xl font-medium">+</h1> <!-- Añadido margen para separar el signo "+" de las imágenes -->
                 <img class="w-5/12 md:h-36 h-30 object-contain" :src="plan.image2" alt="Plan Image">

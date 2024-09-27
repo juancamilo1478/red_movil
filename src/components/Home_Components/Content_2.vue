@@ -29,15 +29,32 @@
         </div>
     </div>
     </section>
+    <section class="w-full"  >
+        <div class="w-3/4 mx-auto  ">
+            <div class="inline-block pt-11   ">
+                <h2 class="text-4xl font-bold whitespace-nowrap" >Promociones</h2>
+                <hr class="border-t-4   w-full mt-4" style="border-color: var(--color-app);"  />
+                <!-- <h2 class="text-1xl font-semibold whitespace-nowrap pt-2">Promociones duos</h2> -->
+            </div>
+        </div>
+        <div class="w-3/4 mx-auto pt-11">
+            <div class="  flex flex-wrap justify-center   mx-auto pt-8" >
+                <PromotionsVue v-for="(duo, index) in promotions"  :key="index" 
+                :plan="duo"/>
+            </div>
+    </div>
+    </section>
 </template>
 <script>
 import Cards_services from '../Cards/Cards_services.vue';
 import Card_service_duo from '../Cards/Card_service_duo.vue';
+import PromotionsVue from '../Cards/Promotions.vue';
 export default {
     name: 'content_2',
     components:{
         Cards_services,
-        Card_service_duo
+        Card_service_duo,
+        PromotionsVue
     },
     data() {
         return {
@@ -55,7 +72,12 @@ export default {
                 { message: 'Netflix & Amazon', window:"3 PANTALLAS" , price:"24.000" ,image:"https://res.cloudinary.com/dirsusbyy/image/upload/v1727421135/u5w0iysd5adwvprqqzui.png",image2:"https://res.cloudinary.com/dirsusbyy/image/upload/v1727421135/rlc6yyqrprenkuzwdemk.png"},
                 { message: 'Disney & Amazon', window:"1 PANTALLA" , price:"17.000" ,image:"https://res.cloudinary.com/dirsusbyy/image/upload/v1727421135/dvmwf3nwngkrc2rfwsue.png",image2:"https://res.cloudinary.com/dirsusbyy/image/upload/v1727421135/rlc6yyqrprenkuzwdemk.png"}, 
             ],
-            
+            promotions:[
+                { message: 'Disney+ + Netflix + Prime', window:"2 PANTALLA" , price:"30.000" ,image:"https://res.cloudinary.com/dirsusbyy/image/upload/v1727421135/rlc6yyqrprenkuzwdemk.png",image2:"https://res.cloudinary.com/dirsusbyy/image/upload/v1727421135/u5w0iysd5adwvprqqzui.png",image3:"https://res.cloudinary.com/dirsusbyy/image/upload/v1727421135/rlc6yyqrprenkuzwdemk.png"},
+                { message: 'Disney+ + Netflix + Prime', window:"2 PANTALLA" , price:"30.000" ,image:"https://res.cloudinary.com/dirsusbyy/image/upload/v1727421135/rlc6yyqrprenkuzwdemk.png",image2:"https://res.cloudinary.com/dirsusbyy/image/upload/v1727421135/u5w0iysd5adwvprqqzui.png",image3:"https://res.cloudinary.com/dirsusbyy/image/upload/v1727421135/rlc6yyqrprenkuzwdemk.png"},
+                { message: 'Disney+ + Netflix + Prime', window:"2 PANTALLA" , price:"30.000" ,image:"https://res.cloudinary.com/dirsusbyy/image/upload/v1727421135/rlc6yyqrprenkuzwdemk.png",image2:"https://res.cloudinary.com/dirsusbyy/image/upload/v1727421135/u5w0iysd5adwvprqqzui.png",image3:"https://res.cloudinary.com/dirsusbyy/image/upload/v1727421135/rlc6yyqrprenkuzwdemk.png"},
+                { message: 'Disney+ + Netflix + Prime', window:"2 PANTALLA" , price:"30.000" ,image:"https://res.cloudinary.com/dirsusbyy/image/upload/v1727421135/rlc6yyqrprenkuzwdemk.png",image2:"https://res.cloudinary.com/dirsusbyy/image/upload/v1727421135/u5w0iysd5adwvprqqzui.png",image3:"https://res.cloudinary.com/dirsusbyy/image/upload/v1727421135/rlc6yyqrprenkuzwdemk.png"},
+            ]
         }
     }
 }
