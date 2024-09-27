@@ -6,7 +6,7 @@
                 <h1 class="mx-4 text-4xl font-medium">+</h1> <!-- Añadido margen para separar el signo "+" de las imágenes -->
                 <img class="w-2/12 md:h-36 h-30 object-contain" :src="plan.image2" alt="Plan Image">
                 <h1 class="mx-4 text-4xl font-medium">+</h1> <!-- Añadido margen para separar el signo "+" de las imágenes -->
-                <img class="w-2/12 md:h-36 h-30 object-contain" :src="plan.image2" alt="Plan Image">
+                <img class="w-2/12 md:h-36 h-30 object-contain" :src="plan.image3" alt="Plan Image">
             </div>
         
             <div class="min-w-72  md:min-w-72 px-1 py-2   text-center">
