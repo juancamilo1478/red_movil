@@ -7,7 +7,7 @@
                 <img class="w-5/12 md:h-52 h-40 object-contain" :src="plan.image2" alt="Plan Image">
             </div>
         
-            <div class="min-w-96 px-6 py-4   text-center">
+            <div class="min-w-80  md:min-w-96 px-6 py-4   text-center">
                 <div class="font-bold text-xl mb-2">{{ plan.message }}</div>
                 <div class="font-bold text-xl mb-2 pb-7">{{ plan.window }}</div>
                 <button class="bg-[var(--color-app)] text-white font-bold py-2 px-6 rounded-full hover:bg-opacity-80">
